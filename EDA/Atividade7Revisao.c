@@ -91,5 +91,6 @@ int insere(Descritor *p, Nodo *novo, int pos){
     aux2 = aux->link;
     novo->link = aux2;
     aux->link = novo;
+    p->tamanho += 1;
     return 0;
 }
